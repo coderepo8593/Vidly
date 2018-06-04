@@ -45,7 +45,7 @@ namespace Vidly.Controllers
             return Content($"pageIndex={pageIndex}&sortBy={sortBy}");
         }
 
-        [Route("movies/release/{year:regex(^\\d{4}$):range(1930, 2020)}/{month:regex(^\\d{2}$):range(1, 12)}")]
+        [Route("movies/released/{year:regex(^\\d{4}$):range(1930, 2020)}/{month:regex(^\\d{2}$):range(1, 12)}")]
         public ActionResult ByReleaseDate(int year, int month)
         {
             string mon = month < 10 ? $"0{month.ToString()}" : month.ToString();
