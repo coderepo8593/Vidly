@@ -1,0 +1,7 @@
+﻿1. Change application name to Vidly
+2. Only two links Customers | Movies
+3. Two hardcoded customers
+4. Clicking on the customer takes you to Customers/Details/{CustomerID}
+5. Customer not found if CustomerID does not exist
+6. If no customers, "No customers"
+7. Movies has two movies

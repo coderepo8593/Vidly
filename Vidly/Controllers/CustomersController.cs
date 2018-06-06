@@ -9,25 +9,25 @@ using Vidly.MockData;
 
 namespace Vidly.Controllers
 {
-    public class MoviesController : Controller
-    {
-        // GET: Movies
+    public class CustomersController : Controller
+    {        
+        // GET: Customers
         public ViewResult Index()
         {
-            var viewModel = new MoviesViewModel
+            var viewModel = new CustomersViewModel
             {
-                Movies = new List<Movie>()
+                Customers = MockCustomers.CustomerData
             };
 
             return View(viewModel);
         }
 
-        [Route("movies/detail/{id:regex(^\\d{1}$):range(1, 2)}")]
+        [Route("customers/detail/{id:regex(^\\d{1}$):range(1, 2)}")]
         public ViewResult Detail(int id)
         {
-            var movies = MockMovies.MovieData[id - 1];
+            var customer = MockCustomers.CustomerData[id - 1];
 
-            return View(movies);
+            return View(customer);
         }
     }
 }

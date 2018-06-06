@@ -1,0 +1,16 @@
+﻿change application name to Vidly
+two menu items Customers | Movies
+Customers Page: 
+	-Has a Customer table
+	-two customers hardcoded
+	-routed to servername/Customers
+	-each customer links to the Customer view, Customers/Details/{CustomerID}
+	-404 error page for CustomerIDs that do not exist
+	-if no customers, then say "No customers found"
+Movies Page: 
+	-Has a Movie table
+	-two movies hardcoded
+	-routed to servername/Movies
+	-each movie links to the Movie view, Movies/{MovieID}
+	-404 error page for MovieIDs that do not exist
+	-if no movies, then say "No movies found"
